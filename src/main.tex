@@ -1,0 +1,92 @@
+%! Author = fabian.sigfridsson
+%! Date = 2023-09-19
+
+\documentclass[11p]{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{fancyheadings}
+%\usepackage{hyperref} % Fixar klickbara länkar
+\usepackage[swedish]{babel}
+\usepackage[
+    backend=biber,
+    style=authoryear-ibid,
+    sorting=ynt
+]{biblatex}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+% Källor
+% \addbibresource{mall.bib}
+% Sökväg till bildmappen
+\graphicspath{ {./images/} }
+
+\def\name{Fabian Sigfridsson}
+\def\email{fabian.sigfridsson@elev.ga.ntig.se}
+\def\foottitle{Mall Enkel raport}
+\title{Labbrapport - Kaströrelse \\ \small Fysik}
+
+
+\author{\name}
+\date{\today}
+
+\begin{document}
+
+    \maketitle
+
+% \section{Abstrakt} om det är mycket text
+% \tableofcontents om det är mycket text
+
+    \section{Syfte och frågeställning}
+    Målet med laborationen är att kunna ange nedslagsplatsen för en kastbana med rimlig
+    feluppskattning.
+    Syftet är förstå begreppet kaströrelse och de modeller som används för att lösa
+    problem som innehåller kaströrelse.
+    \section{Del 1}
+        \subsubsection{Bakgrund}
+            Vi ska ta reda på mynningshastigheten från kanonen.
+
+        \subsubsection{Metod}
+            Vi kan ta fram hastigheten genom först ta reda på hur högt
+            den skjuter rakt upp.
+            Sedan använder vi formeln för en kaströrelses stigningshöjd
+            och räknar ut hastigheten som kräv för den höjden.
+
+        \subsubsection{Resultat}
+            Bollen kom 127cm högt upp i luften.
+
+        \subsubsection{Beräkningar}
+            \begin{equation}
+                y_{max}=\frac{v_0 \cdot \sin^2 \alpha}{2g}
+                \label{eq:eq1}
+            \end{equation}
+            \begin{equation}
+                v_0=\frac{y_{max} \cdot 2g}{\sin^2 \alpha}
+                \label{eq:eq2}
+            \end{equation}
+            \begin{equation}
+                y_{max}=1,27 m
+                \label{eq:eq3}
+            \end{equation}
+            \begin{equation}
+                \alpha=\frac{\Pi}{2}
+                \label{eq:eq4}
+            \end{equation}
+            \begin{equation}
+                g=9,82
+                \label{eq:eq5}
+            \end{equation}
+            \begin{equation}
+                v_0=\frac{1,27 \cdot 2 \cdot 9,82}{1}=5,03 m/s
+                \label{eq:eq6}
+            \end{equation}
+        \subsubsection{Analys}
+            Vi vet nu utgångshastigheten av kulan från kanonen är 5,03 m/s
+
+    \section{Del 2}
+        \subsubsection{Bakgrund}
+            Nu ska vi 
+    \section{Del 3}
+
+    % \newpage
+    % \printbibliography
+\end{document}
